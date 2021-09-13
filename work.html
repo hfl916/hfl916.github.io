@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hefengling</title>
+	<link rel="stylesheet" href="css/public.css">
+	<style>
+		.container{
+			width: 1170px;
+			margin: 0px auto;
+		}
+		.header{
+			padding-top: 40px;
+		}
+		.nav{
+			display: flex;
+			padding-top: 22px;
+			font-size: 18px;
+			font-family: PingFangSC-Semibold, PingFang SC;
+			font-weight: 600;
+			color: #E6E6E6;
+			line-height: 25px;
+		}
+		.navList{
+			margin-right: 10px;
+		}
+		.navList:hover{
+			color: #000;
+		}
+		.nav .active{
+			color: #000;
+		}
+		.info{
+			font-size: 64px;
+			font-family: AvenirLTStd-Black, AvenirLTStd;
+			font-weight: 900;
+			color: #E6E6E6;
+			line-height: 77px;
+			padding-top: 110px;
+		}
+		.de{
+			padding-top: 64px;
+			font-size: 16px;
+			font-family: PingFangSC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #525252;
+			line-height: 30px;
+		}
+		.lxfs{
+			display: flex;
+			align-items: center;
+			padding-top: 60px;
+		}
+		.email{
+			margin-left: 35px;
+		}
+		.phone, .email{
+			display: flex;
+			align-items: center;
+		}
+		.phone span, .email span{
+			margin-left: 16px;
+		}
+		.userInfo .userLeft{
+			float: left;
+		}
+		.userInfo .userRight{
+			position: relative;
+			width: 555px;
+			float: right;
+		}
+		.jl{
+			display: flex;
+		}
+		.jl .line {
+			position: absolute;
+			height: 100%;
+			width: 2px;
+			background: url("image/line.png");
+			background-position: center 12px;
+			background-repeat: repeat-y;
+		}
+		.jl .box {
+			padding-left: 39px;
+		}
+		.jtitle{
+			font-size: 20px;
+			font-family: PingFangSC-Medium, PingFang SC;
+			font-weight: 500;
+			color: #000000;
+		}
+		.jlDe{
+			font-size: 16px;
+			font-family: PingFangSC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #525252;
+			line-height: 32px;
+			padding-top: 32px;
+			padding-bottom: 50px;
+		}
+		.conta{
+			position: relative;
+		}
+		.dian{
+			position: absolute;
+			top: -5px;
+			left: -56px;
+			right: 0px;
+			width: 36px;
+			height: 36px;
+			border-radius: 100%;
+			background: url("newImg/dian.png");
+			background-size: 36px 36px;
+		}
+		.zhedang{
+			position: absolute;
+			left: -42px;
+			right: 0px;
+			width: 10px;
+			height: 100%;
+			background: #fff;
+		}
+		@font-face {
+			font-family: "yingwen";
+			src: url("AvenirLTStd-Black.otf");
+		}
+		.yingwen{
+			font-family: "yingwen" !important;
+		}
+
+		@font-face {
+			font-family: "PingFang";
+			src: url("PingFang.ttc");
+		}
+		.ping{
+			font-family: "PingFang" !important;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header" style="margin-bottom: 30px;">
+			<div class="logo">
+				<img src="newImg/logo.png" width="57" alt="">
+			</div>
+			<ul class="nav">
+				<li class="navList ">
+					<a href="newIndex.html"><span style="font-family: DINAlternate-Bold, DINAlternate;">01</span>.个人信息</a>
+				</li>
+				<li class="navList active">
+					<span style="font-family: DINAlternate-Bold, DINAlternate;">02</span>.工作经验
+				</li>
+				<li class="navList">
+					<a href="jinli.html"><span style="font-family: DINAlternate-Bold, DINAlternate;">03</span>.作品展示</a>
+
+				</li>
+			</ul>
+		</div>
+
+		<div class="userInfo">
+			<div class="userLeft">
+				<div class="info yingwen">
+					<span data-scroll-reveal="enter top over 0.5s and move 80px after 2.6s" style="display: inline-block;font-family: AvenirLTStd-Black, AvenirLTStd;">my work</span> <br>
+					<span data-scroll-reveal="enter top over 0.5s and move 80px after 3.1s" style="display: inline-block;font-family: AvenirLTStd-Black, AvenirLTStd;">experience</span>  <br>
+					<span data-scroll-reveal="enter top over 0.5s and move 80px after 3.6s" class="yingwen" style="color: #FF0000; display: inline-block;">5+.</span>
+				</div>
+				<div class="de ping" data-scroll-reveal="enter top over 0.5s and move 80px after 4.1s">
+					从事互联网多年，擅长移动端、PC端、H5、小程序
+					<br /> 设计并且熟悉产品设计流程。
+					<br />
+					可熟练使用：Sketch、PS、AI、AE、Axure…软件 <br>
+					可简单操作：Flineto、CINEMA 4D…软件
+				</div>
+
+			</div>
+			<div class="userRight">
+				<div class="jl">
+					<div class="line"></div>
+					<div class="box ping">
+						<div class="conta">
+							<div class="dian"></div>
+							<div class="jtitle" data-scroll-reveal="enter top over 0.5s and move 80px after 2.6s"><span style="font-family: DINAlternate-Bold, DINAlternate;">2019-2021</span> 因未来（北京）教育科技有限公司</div>
+							<div class="jlDe" data-scroll-reveal="enter top over 0.5s and move 80px after 2.9s">
+								「因未来」隶属于阳光雨露集团，主要为集团幼儿园教师和家长提供 <br>
+								日常管理+考勤+幼儿观察成长记录…等更专业的软件技术服务。
+							</div>
+						</div>
+						<div class="conta">
+							<div class="dian"></div>
+							<div class="jtitle" data-scroll-reveal="enter top over 0.5s and move 80px after 3.2s"><span style="font-family: DINAlternate-Bold, DINAlternate;">2018-2019</span> 北京奥义状/北京天籁传音数字技术有限公司</div>
+							<div class="jlDe" data-scroll-reveal="enter top over 0.5s and move 80px after 3.5s">
+								「Bgain」是一款数字货币工具，为数字货币用户提供了多样化数字货币金融理财产品等服务。自上线以来，通过数次产品迭代、功能优化、视觉升级，获得庞大用户量。 「天籁K歌」抢唱版是一款在线手机K歌社交娱乐为一体的产品，集合了音乐、游戏、交友、直播等模式，致力于打造年轻一代的音乐互动社区。
+							</div>
+						</div>
+						<div class="conta">
+							<div class="zhedang"></div>
+							<div class="dian"></div>
+							<div class="jtitle" data-scroll-reveal="enter top over 0.5s and move 80px after 3.8s"><span style="font-family: DINAlternate-Bold, DINAlternate;">2016-2018</span> 彩虹蜗牛文化传播北京分公司</div>
+							<div class="jlDe" data-scroll-reveal="enter top over 0.5s and move 80px after 4.1s">
+								「迪宝知识塔」是彩虹蜗牛教育“少儿启蒙教育实验室”研发的移动互联网少儿教育类产品，致力于打造权威定制化的少儿趣味百科类启蒙课程平台。课程面向3-8岁的少年儿童用户，通过趣味性与互动性相结合的教学方式，利用实体教学包配合线上课程的授课形式，立体化帮助孩子了解并构建初级科学百科知识体系。
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="loading">
+		<div class="loadingImgWrap">
+
+		</div>
+	</div>
+
+	<script src="http://www.jq22.com/jquery/1.6.4/jquery.min.js"></script>
+	<script src="js/scrollReveal.js"></script>
+	<script>
+
+		(function(){
+			window.scrollReveal = new scrollReveal({ reset: true, move: '50px'});
+		})();
+
+
+		setTimeout(function (){
+			$('.loading').hide()
+		},2600)
+
+
+
+
+	</script>
+</body>
+</html>
