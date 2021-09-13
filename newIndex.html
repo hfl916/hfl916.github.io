@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hefengling</title>
+	<link rel="stylesheet" href="css/public.css">
+	<style>
+		.container{
+			width: 1170px;
+			margin: 0px auto;
+		}
+		.header{
+			padding-top: 40px;
+		}
+		.nav{
+			display: flex;
+			padding-top: 22px;
+			font-size: 18px;
+			font-family: PingFangSC-Semibold, PingFang SC;
+			font-weight: 600;
+			color: #E6E6E6;
+			line-height: 25px;
+		}
+		.navList{
+			margin-right: 10px;
+		}
+		.navList:hover{
+			color: #000;
+		}
+		.nav .active{
+			color: #000;
+		}
+		.info{
+			font-size: 64px;
+			font-family: AvenirLTStd-Black, AvenirLTStd;
+			font-weight: 900;
+			color: #E6E6E6;
+			line-height: 77px;
+			padding-top: 110px;
+		}
+		.de{
+			padding-top: 64px;
+			font-size: 16px;
+			font-family: PingFangSC-Regular, PingFang SC;
+			font-weight: 400;
+			color: #525252;
+			line-height: 30px;
+		}
+		.lxfs{
+			display: flex;
+			align-items: center;
+			padding-top: 60px;
+		}
+		.email{
+			margin-left: 35px;
+		}
+		.phone, .email{
+			display: flex;
+			align-items: center;
+		}
+		.phone span, .email span{
+			margin-left: 16px;
+		}
+		.userInfo .userLeft{
+			float: left;
+		}
+		.userInfo .userRight{
+			float: right;
+		}
+		.imgWrap{
+			position: relative;
+			width: 660px;
+			height: 544px;
+			overflow: hidden;
+		}
+		.userhuaxiang{
+			position: absolute;
+			top: 40px;
+			right: 0px;
+			width: 85%;
+		}
+
+
+		@font-face {
+			font-family: "PingFang";
+			src: url("PingFang.ttc");
+		}
+		.ping{
+			font-family: "PingFang" !important;
+		}
+		@font-face {
+			font-family: "yingwen";
+			src: url("AvenirLTStd-Black.otf");
+		}
+		.yingwen{
+			font-family: "yingwen" !important;
+		}
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header" style="margin-bottom: 30px;">
+			<div class="logo">
+				<img src="newImg/logo.png" width="57" alt="">
+			</div>
+			<ul class="nav ping">
+				<li class="navList active">
+					<a href=""><span style="font-family: DINAlternate-Bold, DINAlternate;">01</span>.个人信息</a>
+				</li>
+				<li class="navList">
+					<a href="work.html"><span style="font-family: DINAlternate-Bold, DINAlternate;">02</span>.工作经验</a>
+				</li>
+				<li class="navList">
+					<a class="ping" href="jinli.html"><span style="font-family: DINAlternate-Bold, DINAlternate;">03</span>.作品展示</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="userInfo">
+			<div class="userLeft">
+				<div class="info yingwen" >
+					<span style="display: inline-block;font-family: AvenirLTStd-Black, AvenirLTStd;" data-scroll-reveal="enter top over 0.5s and move 80px after 2.6s">hello，</span> <br>
+					<span style="display: inline-block;font-family: AvenirLTStd-Black, AvenirLTStd;" data-scroll-reveal="enter top over 0.5s and move 80px after 3.1s">my name is</span>  <br>
+					<span style="display: inline-block; color: #FF0000;" data-scroll-reveal="enter top over 0.5s and move 80px after 3.6s" class="yingwen" >Hefengling.</span>
+				</div>
+				<div class="de ping" data-scroll-reveal="enter top over 0.5s and move 80px after 4.1s">
+					工作中：善于沟通、积极热情、注重团队合作、富有责任感 <br>
+					热爱多项运动：单板滑雪、潜水、游泳
+				</div>
+				<div class="lxfs">
+					<div class="phone ping" data-scroll-reveal="enter left over 0.5s and move 80px after 4.6s">
+						<img src="newImg/phone.png" alt="">
+						<span style="font-family: AvenirLTStd-Black, AvenirLTStd;">17600223277 / 何凤玲</span>
+					</div>
+					<div class="email ping" data-scroll-reveal="enter left over 0.5s and move 80px after 5.1s">
+						<img src="newImg/email.png" alt="">
+						<span style="font-family: AvenirLTStd-Black, AvenirLTStd;">hefengling916@163.com</span>
+					</div>
+				</div>
+			</div>
+			<div class="userRight">
+				<div class="imgWrap" data-scroll-reveal="enter right over 1s and move 80px after 2.6s">
+					<img src="newImg/gerenxinxiang.png" class="userhuaxiang" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="loading">
+		<div class="loadingImgWrap">
+
+		</div>
+	</div>
+
+	<script src="http://www.jq22.com/jquery/1.6.4/jquery.min.js"></script>
+	<script src="js/skroll.min.js"></script>
+	<script src="js/scrollReveal.js"></script>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({ reset: true, move: '50px'});
+		})();
+		var topp = 0
+		setTimeout(() => {
+			$('.loading').hide()
+		},2600)
+		// var timeaa = setInterval(function () {
+		// 	topp -= 584
+		// 	if (topp <= -7486) {
+		// 		clearInterval(timeaa)
+		// 	} else {
+		// 		$('.userhuaxiang').css({
+		// 			top: topp + 'px'
+		// 		})
+		//
+		// 	}
+		//
+		// }, 150)
+
+		$('.worksItem').hover(function(){
+			$(this).find('.ItemBox').addClass('activeBox')
+
+		},function(){
+			$(this).find('.ItemBox').removeClass('activeBox')
+		})
+
+		$('.navList li').click(function(){
+			var th = $(this).index();
+			var top = $('.navBox').position().top;
+			var top1 = $('.meSkills').position().top+10;
+			var top2 = $('.works').position().top+10;
+			var top3 = $('.workDate').position().top+10;
+			var top4 = $('.contect').position().top+10;
+
+			if (th === 0) {
+				$('html,body').animate({scrollTop:'0px'}, 500);
+			};
+
+			if (th === 1) {
+				$('html,body').animate({scrollTop: 771 + 'px'}, 500);
+			};
+
+			if (th === 2) {
+				$('html,body').animate({scrollTop: top1 + 'px'}, 500);
+			};
+
+			if (th === 3) {
+				$('html,body').animate({scrollTop: top2 + 'px'}, 500);
+			};
+
+			if (th === 4) {
+				$('html,body').animate({scrollTop: top3 + 'px'}, 500);
+			};
+
+			if (th === 5) {
+				$('html,body').animate({scrollTop: top4 + 'px'}, 500);
+			};
+
+
+			//alert(th)
+		})
+
+
+	</script>
+</body>
+</html>

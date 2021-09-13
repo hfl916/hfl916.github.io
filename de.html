@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hefengling</title>
+	<link rel="stylesheet" href="css/public.css">
+	<style>
+		.container{
+			width: 1170px;
+			margin: 0px auto;
+			font-size: 0px;
+		}
+		.container img{
+			width: 100%;
+		}
+		.header{
+			padding-top: 40px;
+		}
+
+		.nav{
+			display: flex;
+			padding-top: 22px;
+			font-size: 18px;
+			font-family: PingFangSC-Semibold, PingFang SC;
+			font-weight: 600;
+			color: #E6E6E6;
+			line-height: 25px;
+		}
+		.navList{
+			margin-right: 10px;
+		}
+		.navList:hover{
+			color: #000;
+		}
+		.nav .active{
+			color: #000;
+		}
+		.de{
+			display: none;
+		}
+		.smallText{
+			font-size: 12px;
+			font-family: PingFangSC-Semibold, PingFang SC;
+			font-weight: 600;
+			color: #525252;
+			line-height: 17px;
+		}
+		.pull{
+			position: fixed;
+			bottom: 60px;
+			right: 130px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header" style="margin-bottom: 60px;">
+			<div class="logo">
+				<img src="newImg/logo.png" width="57"  style="width: 57px !important;;" alt="">
+			</div>
+			<ul class="nav ping">
+				<li class="navList ">
+					<a href=""><span style="font-family: DINAlternate-Bold, DINAlternate;">01</span>.个人信息</a>
+				</li>
+				<li class="navList">
+					<a href="work.html"><span style="font-family: DINAlternate-Bold, DINAlternate;">02</span>.工作经验</a>
+				</li>
+				<li class="navList active">
+					<a class="ping" href="jinli.html"><span style="font-family: DINAlternate-Bold, DINAlternate;">03</span>.作品展示
+						<span class="smallText">(查看更多内容请点点点我)</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="de de1">
+			<img src="newImg/de1.png" alt="">
+			<img src="newImg/de2.png" alt="">
+			<img src="newImg/de3.png" alt="">
+			<img src="newImg/de4.png" alt="">
+			<img src="newImg/de5.png" alt="">
+		</div>
+		<div class="de de2">
+			<img src="newImg/bgain1.png" alt="">
+			<img src="newImg/bgain2.png" alt="">
+			<img src="newImg/bgain3.png" alt="">
+			<img src="newImg/bgain4.png" alt="">
+			<img src="newImg/bgain5.png" alt="">
+		</div>
+		<div class="de de3">
+			<img src="newImg/dibao.png" alt="">
+			<img src="newImg/dibao1.png" alt="">
+		</div>
+		<div class="de de4">
+			<img src="newImg/t1.png" alt="">
+			<img src="newImg/t2.png" alt="">
+			<img src="newImg/t3.png" alt="">
+			<img src="newImg/t4.png" alt="">
+			<img src="newImg/t5.png" alt="">
+			<img src="newImg/t6.png" alt="">
+			<img src="newImg/t7.png" alt="">
+		</div>
+		<div class="de de5">
+			<img src="newImg/yy1.png" alt="">
+			<img src="newImg/yy2.png" alt="">
+			<img src="newImg/yy3.png" alt="">
+			<img src="newImg/yy4.png" alt="">
+		</div>
+		<div class="de de6">
+			<img src="newImg/m1.png" alt="">
+			<img src="newImg/m2.png" alt="">
+			<img src="newImg/m3.png" alt="">
+			<img src="newImg/m4.png" alt="">
+			<img src="newImg/m5.png" alt="">
+		</div>
+		<div class="de de7">
+			<img src="newImg/p1.png" alt="">
+			<img src="newImg/p2.png" alt="">
+			<img src="newImg/p3.png" alt="">
+			<img src="newImg/p4.png" alt="">
+			<img src="newImg/p5.png" alt="">
+		</div>
+		<div class="de de8">
+			<img src="newImg/s1.png" alt="">
+			<img src="newImg/s2.png" alt="">
+			<img src="newImg/s3.png" alt="">
+		</div>
+		<div class="de de9">
+			<img src="newImg/h1.png" alt="">
+			<img src="newImg/h2.png" alt="">
+			<img src="newImg/h3.png" alt="">
+			<img src="newImg/h4.png" alt="">
+			<img src="newImg/h5.png" alt="">
+			<img src="newImg/h6.png" alt="">
+			<img src="newImg/h7.png" alt="">
+			<img src="newImg/h8.png" alt="">
+		</div>
+	</div>
+
+	<img src="newImg/pull.png" style="cursor: pointer;display: none;" width="70px" class="pull" alt="">
+	<div class="loading">
+		<div class="loadingImgWrap">
+
+		</div>
+	</div>
+	<script src="http://www.jq22.com/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.reveal.js"></script>
+	<script src="js/skroll.min.js"></script>
+	<script>
+		setTimeout(() => {
+			$('.loading').hide()
+		},2600)
+		function getQueryString(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+			var r = window.location.search.substr(1).match(reg);
+			if (r != null) return unescape(r[2]); return null;
+		}
+		console.log('.' + getQueryString('type'))
+
+		$('.de' + getQueryString('type')).show()
+
+		$(window).bind('scroll',function(scroll){
+
+			var winScTop = $(window).scrollTop();
+			var wHeight = $(window).height()+100
+
+			if (wHeight < winScTop) {
+				$('.pull').show()
+			} else {
+				$('.pull').hide()
+			}
+		})
+
+		$('.pull').click(function (){
+			$('html,body').animate({scrollTop:'0px'}, 500);
+		})
+	</script>
+</body>
+</html>
